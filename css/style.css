@@ -18,10 +18,10 @@
     transform: translateY(0);
   }
   25% {
-    transform: translateY(0.5rem);
+    transform: translateY(1rem);
   }
   75% {
-    transform: translateY(-0.5rem);
+    transform: translateY(-1rem);
   }
   100% {
     transform: translateY(0);
@@ -49,6 +49,11 @@ body, html {
   font-family: "Shrikhand", "cursive";
   margin: 0;
   text-align: center;
+}
+@media (max-width: 270px) {
+  .header_logo {
+    font-size: 1em;
+  }
 }
 
 .footer {
@@ -92,6 +97,16 @@ body, html {
   margin-right: 0.5rem;
 }
 
+/* 
+
+  modifier la rotation du like
+
+  verifier le responssive jusqu'a 200
+
+  validator HTML
+
+
+*/
 .loader {
   position: fixed;
   height: 100%;
@@ -124,11 +139,11 @@ body, html {
 }
 .loader_item--2 {
   background-color: #FF79DA;
-  animation-delay: 0.25s;
+  animation-delay: 0.5s;
 }
 .loader_item--3 {
   background-color: #99E2D0;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 
 .localisation {
@@ -181,6 +196,11 @@ body, html {
   text-decoration: none;
   color: inherit;
 }
+@media (max-width: 280px) {
+  .about_btn {
+    font-size: 0.6rem;
+  }
+}
 
 .function {
   padding: 2rem 1rem;
@@ -207,6 +227,10 @@ body, html {
   background-color: #f6f6f6;
   display: flex;
   position: relative;
+}
+.function_step:hover {
+  background-color: rgba(147, 86, 220, 0.5);
+  cursor: pointer;
 }
 @media (min-width: 64rem) {
   .function_step {
@@ -325,8 +349,8 @@ body, html {
   background-color: white !important;
 }
 .card:hover {
-  -ms-transform: scale(1.019); /* IE 9 */
-  -webkit-transform: scale(1.019); /* Safari 3-8 */
+  -ms-transform: scale(1.019);
+  -webkit-transform: scale(1.019);
   transform: scale(1.015);
 }
 .card:active {
@@ -369,6 +393,11 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 270px) {
+  .menu_header {
+    display: grid;
+  }
 }
 .menu_title {
   font-family: "Shrikhand", "cursive";
@@ -457,7 +486,7 @@ body, html {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 0.6s;
+  animation: itemAppear 0.8s;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
   transform: scale(0);
@@ -508,7 +537,7 @@ body, html {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   transition-duration: 0.5s;
 }
 .menuItem:hover .menuItem_wrapIcon {
@@ -519,39 +548,39 @@ body, html {
 }
 
 .delay-0 {
-  animation-delay: cacl(scut-strip-unit(0)/10) s;
+  animation-delay: 0s;
 }
 
 .delay-1 {
-  animation-delay: cacl(scut-strip-unit(1)/10) s;
+  animation-delay: 0.1s;
 }
 
 .delay-2 {
-  animation-delay: cacl(scut-strip-unit(2)/10) s;
+  animation-delay: 0.2s;
 }
 
 .delay-3 {
-  animation-delay: cacl(scut-strip-unit(3)/10) s;
+  animation-delay: 0.3s;
 }
 
 .delay-4 {
-  animation-delay: cacl(scut-strip-unit(4)/10) s;
+  animation-delay: 0.4s;
 }
 
 .delay-5 {
-  animation-delay: cacl(scut-strip-unit(5)/10) s;
+  animation-delay: 0.5s;
 }
 
 .delay-6 {
-  animation-delay: cacl(scut-strip-unit(6)/10) s;
+  animation-delay: 0.6s;
 }
 
 .delay-7 {
-  animation-delay: cacl(scut-strip-unit(7)/10) s;
+  animation-delay: 0.7s;
 }
 
 .delay-8 {
-  animation-delay: cacl(scut-strip-unit(8)/10) s;
+  animation-delay: 0.8s;
 }
 
 .wrapBtn {
@@ -582,6 +611,11 @@ body, html {
 .commandBtn a {
   text-decoration: none;
   color: inherit;
+}
+@media (max-width: 280px) {
+  .commandBtn {
+    font-size: 0.6rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -28,6 +28,9 @@ body, html {
     text-decoration: none;
     color: inherit;
   }
+  @media(max-width: 280px) {
+    font-size: 0.6rem;
+  }
 }
 
 $color-primary: #9356DC;
@@ -51,6 +54,9 @@ $appPadding: 1rem;
     font-family: "Shrikhand", "cursive";
     margin: 0;
     text-align: center;
+    @media(max-width: 270px) {
+      font-size: 1em;
+    }
   }
 }
 
